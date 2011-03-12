@@ -1,0 +1,3 @@
+[submodule "sites/all/modules/wysiwyg"]
+	path = sites/all/modules/wysiwyg
+	url = git://git.drupal.org/project/wysiwyg.git
