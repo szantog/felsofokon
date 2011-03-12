@@ -1,5 +1,7 @@
 <?php
 
+// $Id: exportables.install,v 1.2.2.2 2010/07/27 16:26:16 dagmar Exp $
+
 /**
  * Implementation of hook_install().
  */
@@ -18,7 +20,7 @@ function exportables_uninstall() {
  * Implementation of hook_schema().
  */
 function exportables_schema() {
-  $schema['exportables_machine_names'] = array(
+  $schema['exportables'] = array(
     'description' => t('Machine readable names and IDs storage.'),
     'fields' => array(
       'id' => array(
@@ -29,13 +31,6 @@ function exportables_schema() {
         'default' => 0,
         'length' => 11,
       ),
-      'type' => array(
-        'description' => t('The type of object.'),
-        'type' => 'varchar',
-        'length' => 32,
-        'not null' => TRUE,
-        'default' => '',
-      ),
       'machine' => array(
         'description' => t('The machine-readable name.'),
         'type' => 'varchar',
@@ -43,39 +38,25 @@ function exportables_schema() {
         'not null' => TRUE,
         'default' => '',
       ),
+      'type' => array(
+        'description' => t('The type of object.'),
+        'type' => 'varchar',
+        'length' => 32,
+        'not null' => TRUE,
+        'default' => '',
+      ),
+      'in_code' => array(
+        'description' => t('Flag to indicate whether this object is in the database or in code'),
+        'type' => 'int',
+        'not null' => TRUE,
+        'default' => 0,
+        'size' => 'tiny',
+      ),
     ),
+    'primary key' => array('id', 'machine', 'type'),
     'indexes' => array(
       'machine' => array('machine', 'type'),
       'id' => array('id', 'type'),
-    ),
-  );
-
-  $schema['exportables_object_cache'] = array(
-    'description' => t('Cache for previous versions of objects.'),
-    'fields' => array(
-      'type' => array(
-        'description' => t('The type of object.'),
-        'type' => 'varchar',
-        'length' => 32,
-        'not null' => TRUE,
-        'default' => '',
-      ),
-      'machine' => array(
-        'description' => t('The machine-readable name.'),
-        'type' => 'varchar',
-        'length' => 255,
-        'not null' => TRUE,
-        'default' => '',
-      ),  
-      'object' => array(
-        'description' => t('The object.'),
-        'type' => 'text',
-        'not null' => TRUE,
-        'size' => 'big',
-      ),
-    ),
-    'indexes' => array(
-      'machine' => array('machine', 'type'),
     ),
   );
 
