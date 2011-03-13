@@ -1,0 +1,3 @@
+<?php
+
+include_once('fr_roles_settings.features.inc');
