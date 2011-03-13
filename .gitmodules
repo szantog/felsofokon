@@ -1,3 +1,18 @@
 [submodule "sites/all/modules/wysiwyg"]
 	path = sites/all/modules/wysiwyg
 	url = git://git.drupal.org/project/wysiwyg.git
+[submodule "sites/all/modules/custom_features/input_format_editor"]
+	path = sites/all/modules/custom_features/input_format_editor
+	url = /home/szantogabor/public_html/submodules/input_format_editor/.git
+[submodule "sites/all/modules/custom_features/fr_og_blog"]
+	path = sites/all/modules/custom_features/fr_og_blog
+	url = /home/szantogabor/public_html/submodules/fr_og_blog/.git
+[submodule "sites/all/modules/custom_features/fr_og_settings"]
+	path = sites/all/modules/custom_features/fr_og_settings
+	url = /home/szantogabor/public_html/submodules/fr_og_settings/.git
+[submodule "sites/all/modules/custom_features/fr_roles_settings"]
+	path = sites/all/modules/custom_features/fr_roles_settings
+	url = /home/szantogabor/public_html/submodules/fr_roles_settings/.git
+[submodule "sites/all/modules/custom_features/fr_language_settings"]
+	path = sites/all/modules/custom_features/fr_language_settings
+	url = /home/szantogabor/public_html/submodules/fr_language_settings/.git
