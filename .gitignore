@@ -2,4 +2,11 @@
 *.orig
 *.patch
 LICENSE.txt
-sites/default/files
+backups/*
+tmp/*
+files/*
+sites/default/settings.php
+*~
+\#*
+.#*
+
