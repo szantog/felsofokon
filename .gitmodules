@@ -25,3 +25,6 @@
 [submodule "sites/all/modules/features"]
 	path = sites/all/modules/features
 	url = git://git.drupal.org/project/features
+[submodule "sites/all/modules/boxes"]
+	path = sites/all/modules/boxes
+	url = git://git.drupal.org/project/boxes
