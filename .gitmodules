@@ -25,3 +25,6 @@
 [submodule "sites/all/modules/features"]
 	path = sites/all/modules/features
 	url = git://git.drupal.org/project/features
+[submodule "sites/all/modules/custom_features/fr_blog_post"]
+	path = sites/all/modules/custom_features/fr_blog_post
+	url = /home/szantogabor/public_html/submodules/fr_blog_post/.git
