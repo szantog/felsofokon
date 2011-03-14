@@ -1,0 +1,59 @@
+<?php
+// $Id: og_strict_filter.module,v 1.1 2010/01/27 13:07:33 falcon Exp $
+
+/**
+ * Sponsored by: Norwegian Centre for Telemedicine
+ * Author: Falcon
+ * 
+ * 
+ * @file
+ * Makes sure only nodes and terms from active group is shown
+ */
+
+/**
+ * Implementation of hook_db_rewrite_sql
+ */
+function og_strict_filter_db_rewrite_sql($query, $table, $field, $args) {
+  $group = og_get_group_context();
+  if (!isset($group) || !isset($group->nid) || !is_numeric($group->nid))
+    return;
+  $to_return = array();
+  switch ($field) {
+    case 'nid':
+      $to_return['join'] = "JOIN {og_ancestry} oa ON oa.nid = $table.nid";
+      $to_return['where'] = 'oa.group_nid = '. $group->nid;
+      break;
+    case 'tid':
+      $to_return['join'] = "JOIN {og_strict_filter_tid_ancestry} oa ON oa.tid = $table.tid";
+      $to_return['where'] = 'oa.group_nid = '. $group->nid;
+  }
+  return $to_return;
+}
+
+/**
+ * Implementation of hook_taxonomy().
+ */
+function og_strict_filter_taxonomy($op, $type, $term = NULL) {
+  if ($op == 'insert' /*&& $term['vid'] == variable_get('forum_nav_vocabulary', '')*/) {
+    switch ($type) {
+      case 'term':
+      	$group = og_get_group_context();
+        $sql = 'INSERT INTO {og_strict_filter_tid_ancestry}
+                (tid, group_nid)
+                VALUES(%d, %d)';
+        db_query($sql, $term['tid'], $group->nid);
+        break;
+    }
+  }
+  if ($op == 'delete'/* && $term['vid'] == variable_get('forum_nav_vocabulary', '')*/) {
+    switch ($type) {
+      case 'term':
+      	$group = og_get_group_context();
+        $sql = 'DELETE FROM {og_strict_filter_tid_ancestry}
+                WHERE tid = %d';
+        db_query($sql, $term->tid);
+        break;
+    }
+  }
+}
+

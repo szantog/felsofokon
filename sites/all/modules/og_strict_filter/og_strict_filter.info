@@ -1,0 +1,12 @@
+; $Id: og_strict_filter.info,v 1.2 2010/01/27 13:09:21 falcon Exp $
+name = Organic Groups Strict Filter
+description = "Makes sure only nodes from active group are listed"
+package = "Organic groups"
+dependencies[] = og
+core = 6.x
+; Information added by drupal.org packaging script on 2010-01-27
+version = "6.x-1.0-beta1"
+core = "6.x"
+project = "og_strict_filter"
+datestamp = "1264598410"
+

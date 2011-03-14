@@ -1,0 +1,34 @@
+<?php 
+// $Id: og_strict_filter.install,v 1.1 2010/01/27 13:07:33 falcon Exp $
+
+/**
+ * Implementation of hook_install().
+ */
+function og_strict_filter_install() {
+  drupal_install_schema('og_strict_filter');
+}
+
+/**
+ * Implementation of hook_schema().
+ */
+function og_strict_filter_schema() {
+  $schema['og_strict_filter_tid_ancestry'] = array(
+    'description' => 'Stores information about what terms belongs to what groups...',
+    'fields' => array(
+      'tid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+      'group_nid' => array(
+        'type' => 'int',
+        'unsigned' => TRUE,
+        'not null' => TRUE,
+        'default' => 0,
+      ),
+    ),
+    'primary key' => array('tid', 'group_nid'),
+  );
+  return $schema;
+}
