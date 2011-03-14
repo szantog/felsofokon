@@ -28,3 +28,6 @@
 [submodule "sites/all/modules/custom_features/fr_blog_post"]
 	path = sites/all/modules/custom_features/fr_blog_post
 	url = /home/szantogabor/public_html/submodules/fr_blog_post/.git
+[submodule "sites/all/modules/boxes"]
+	path = sites/all/modules/boxes
+	url = git://git.drupal.org/project/boxes
