@@ -1,4 +1,0 @@
-name = "Boxes"
-description = "Provides exports for custom blocks and spaces integration."
-core = "6.x"
-dependencies[] = "ctools"
