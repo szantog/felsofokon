@@ -31,3 +31,6 @@
 [submodule "sites/all/modules/boxes"]
 	path = sites/all/modules/boxes
 	url = git://git.drupal.org/project/boxes
+[submodule "sites/all/modules/custom_features/custom_block_fr"]
+	path = sites/all/modules/custom_features/custom_block_fr
+	url = /home/szantogabor/public_html/submodules/custom_block_fr
