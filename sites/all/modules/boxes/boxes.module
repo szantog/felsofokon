@@ -1,5 +1,4 @@
 <?php
-// $Id: boxes.module,v 1.10.2.19 2010/08/06 21:52:56 jmiccolis Exp $
 
 /**
  * Implementation of hook_menu().
@@ -91,7 +90,9 @@ function boxes_block($op = 'list', $delta = '', $edit = array()) {
     case 'save':
       $edit['delta'] = $delta;
       $box = boxes_factory($edit['plugin_key'], $edit);
-      $box->save();
+      if (is_object($box)) {
+        $box->save();
+      }
       break;
 
     case 'view':
@@ -152,7 +153,13 @@ function boxes_block($op = 'list', $delta = '', $edit = array()) {
 function boxes_footer() {
   // Besure the page isn't a 404 or 403.
   $headers = drupal_set_header();
-  foreach (explode("\n", $headers) as $header) {
+
+  // Support for Pressflow patched drupal_set_header
+  if (!is_array($headers)) {
+    $headers = explode("\n", $headers);
+  }
+
+  foreach ($headers as $header) {
     if ($header == "HTTP/1.1 404 Not Found" || $header == "HTTP/1.1 403 Forbidden") {
       return;
     }
@@ -312,7 +319,7 @@ function boxes_box_form($form_state) {
 function boxes_box_form_submit($form, $form_state) {
   $box = boxes_factory($form_state['values']['plugin_key'], $form_state['values']);
 
-  if (module_exists('spaces') && $space = spaces_get_space()) {
+  if (module_exists('spaces') && ($space = spaces_get_space()) && is_object($box)) {
     $space->controllers->boxes->set($box->delta, $box);
   }
   else {
@@ -509,7 +516,7 @@ function boxes_context_block_info_alter(&$blocks) {
  * Provides spaces integration for per-space overrides of a given box.
  */
 function boxes_boxes_load_alter(&$box, $delta) {
-  if (module_exists('spaces') && $space = spaces_get_space()) {
+  if (module_exists('spaces') && ($space = spaces_get_space()) && is_object($delta)) {
     if ($space_box = $space->controllers->boxes->get($delta)) {
       // Some older overrides may be stored as an array, check for these and
       // convert them to objects.
