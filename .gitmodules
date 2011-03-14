@@ -17,5 +17,5 @@
 	path = sites/all/modules/custom_features/fr_language_settings
 	url = /home/szantogabor/public_html/submodules/fr_language_settings/.git
 [submodule "strongarm"]
-	path = sites/all/modules/strongarm
+	path = strongarm
 	url = http://git.drupal.org/project/strongarm.git
