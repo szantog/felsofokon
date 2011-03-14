@@ -19,3 +19,6 @@
 [submodule "strongarm"]
 	path = strongarm
 	url = http://git.drupal.org/project/strongarm.git
+[submodule "sites/all/modules/strongarm"]
+	path = sites/all/modules/strongarm
+	url = http://git.drupal.org/project/strongarm.git
