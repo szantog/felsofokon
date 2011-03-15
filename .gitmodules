@@ -40,7 +40,4 @@
 [submodule "sites/all/modules/purl"]
 	path = sites/all/modules/purl
 	url = git://git.drupal.org/project/purl
-[submodule "sites/all/libraries/htmlpurifier"]
-        path = sites/all/modules/purl
-        url = git://repo.or.cz/htmlpurifier.git
 
