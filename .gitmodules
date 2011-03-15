@@ -41,3 +41,6 @@
 	path = sites/all/modules/purl
 	url = git://git.drupal.org/project/purl
 
+[submodule "sites/all/modules/filefield_paths"]
+	path = sites/all/modules/filefield_paths
+	url = git://git.drupal.org/project/filefield_paths
