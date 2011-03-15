@@ -1,5 +1,4 @@
 <?php
-// $Id$
 /**
  * @file
  * Wysiwyg module plugin.
@@ -19,9 +18,8 @@ function wysiwyg_fields_wysiwyg_fields_plugin() {
    * @see wysiwyg_wysiwyg_fields_init()
    */
   if (isset($_SESSION['wysiwyg_fields'])) {
-    // @TODO - Report issue with content_fields(), returns fields that aren't attached the the reference content type.
-    foreach (content_fields(NULL, $_SESSION['wysiwyg_fields']) as $field) {
-      if (isset($field['widget']['wysiwyg_fields_status']) && $field['widget']['wysiwyg_fields_status']) {
+    foreach (content_fields() as $field) {
+      if (!is_null(content_fields($field['field_name'], $_SESSION['wysiwyg_fields'])) && isset($field['widget']['wysiwyg_fields_status']) && $field['widget']['wysiwyg_fields_status']) {
         // Define Wysiwyg plugin.
         // @TODO - Wysiwyg plugins aren't being ordered by weight, fix.
         $plugins["wysiwyg_fields_{$field['field_name']}"] = array(
@@ -46,6 +44,14 @@ function wysiwyg_fields_wysiwyg_fields_plugin() {
             db_query("UPDATE {wysiwyg} SET settings = '%s' WHERE format = %d", serialize($profile->settings), $profile->format);
           }
         }
+
+        // Prevent dynamic JavaScript files from being parsed through locale.
+        $parsed = variable_get('javascript_parsed', array());
+        $js = drupal_get_path('module', 'wysiwyg_fields') . "/plugins/wysiwyg_fields_{$field['field_name']}/wysiwyg_fields_{$field['field_name']}.js";
+        if (!in_array($js, $parsed)) {
+          $parsed[] = $js;
+        }
+        variable_set('javascript_parsed', $parsed);
       }
     }
     unset($_SESSION['wysiwyg_fields']);

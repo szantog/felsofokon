@@ -1,5 +1,4 @@
 <?php
-// $Id$
 /**
  * @file
  * Content module integration.
@@ -8,7 +7,7 @@
 /**
  * Implements hook_wysiwyg_fields_theme_alter() on behalf of content.module.
  */
-function content_wysiwyg_fields_theme_alter(&$items) {
+function content_wysiwyg_fields_theme_alter($items) {
   $items['wysiwyg_fields_widget_settings_alter'] = array(
     'arguments' => array(
       'element' => array(),
@@ -224,7 +223,7 @@ function _content_wysiwyg_fields_form_alter_alter_submit($form, &$form_state) {
 /**
  * Implements hook_wysiwyg_fields_nodeapi_alter() on behalf of content.module.
  */
-function content_wysiwyg_fields_nodeapi_alter(&$node, $op, $a3 = NULL, $a4 = NULL) {
+function content_wysiwyg_fields_nodeapi_alter($node, $op, $a3 = NULL, $a4 = NULL) {
   switch ($op) {
     case 'presave':
       // Re-assign deltas to mach CCKs changes.

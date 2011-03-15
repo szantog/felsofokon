@@ -1,5 +1,4 @@
 <?php
-// $Id$
 /**
  * @file
  * Filter module integration.
@@ -84,7 +83,7 @@ function _wysiwyg_fields_text_to_tokens($text) {
 /**
  * Implements hook_wysiwyg_fields_nodeapi_alter() on behalf of filter.module.
  */
-function filter_wysiwyg_fields_nodeapi_alter(&$node, $op, $a3 = NULL, $a4 = NULL) {
+function filter_wysiwyg_fields_nodeapi_alter($node, $op, $a3 = NULL, $a4 = NULL) {
   switch ($op) {
     case 'update':
       // @TODO - Only flush cache if any of the tokens are affected.
