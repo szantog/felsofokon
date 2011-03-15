@@ -34,3 +34,6 @@
 [submodule "sites/all/modules/custom_features/custom_block_fr"]
 	path = sites/all/modules/custom_features/custom_block_fr
 	url = /home/szantogabor/public_html/submodules/custom_block_fr
+[submodule "sites/all/modules/wysiwyg_fields"]
+	path = sites/all/modules/wysiwyg_fields
+	url = git://git.drupal.org/project/wysiwyg_fields
