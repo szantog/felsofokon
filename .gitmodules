@@ -37,3 +37,6 @@
 [submodule "sites/all/modules/wysiwyg_fields"]
 	path = sites/all/modules/wysiwyg_fields
 	url = git://git.drupal.org/project/wysiwyg_fields
+[submodule "sites/all/modules/purl"]
+	path = sites/all/modules/purl
+	url = git://git.drupal.org/project/purl
