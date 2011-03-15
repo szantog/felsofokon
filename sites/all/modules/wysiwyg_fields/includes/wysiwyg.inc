@@ -1,0 +1,68 @@
+<?php
+// $Id$
+/**
+ * @file
+ * Wysiwyg module integration.
+ */
+
+/**
+ * Implements hook_wysiwyg_fields_init_alter() on behalf of wysiwyg.module.
+ */
+function wysiwyg_wysiwyg_fields_init_alter($data) {
+  // Rebuild menu after module is enabled.
+  if (variable_get('wysiwyg_fields_enable', FALSE)) {
+    variable_del('wysiwyg_fields_enable');
+    menu_rebuild();
+  }
+
+  // Store Content Type in $_SESSION['wysiwyg_fields'] to provide context.
+  if (isset($_POST) && isset($_POST['form_id']) && strpos($_POST['form_id'], '_node_form') == strlen($_POST['form_id']) - 10) {
+    $_SESSION['wysiwyg_fields'] = str_replace('_node_form', '', $_POST['form_id']);
+  }
+}
+
+/**
+ * Implements hook_wysiwyg_include_directory().
+ */
+function wysiwyg_fields_wysiwyg_include_directory($type) {
+  switch ($type) {
+    case 'plugins':
+      return $type;
+  }
+}
+
+/**
+ * Implements hook_wysiwyg_fields_menu_alter() on behalf of wysiwyg.module.
+ */
+function wysiwyg_wysiwyg_fields_menu_alter(&$items) {
+  $items[drupal_get_path('module', 'wysiwyg_fields') . '/plugins'] = array(
+    'title' => 'Wysiwyg Fields dynamic Wysiwyg plugin callback',
+    'page callback' => 'wysiwyg_fields_wysiwyg_plugin_callback',
+    'access callback' => TRUE,
+    'type' => MENU_CALLBACK,
+  );
+}
+
+/**
+ * Page callback; Render dynamic Wysiwyg plugin js or icon.
+ */
+function wysiwyg_fields_wysiwyg_plugin_callback() {
+  $request = explode('/', request_uri());
+  switch ($request[count($request) - 2]) {
+    case 'images':
+      $file = wysiwyg_fields_icons(current(explode('?', $request[count($request) - 1])));
+      $info = pathinfo($file);
+
+      header("Content-Type: image/{$info['extension']}");
+      header('Cache-Control: public');
+      readfile($file);
+      break;
+
+    default:
+      $field = drupal_substr($request[count($request) - 2], 15);
+
+      header("Content-type: text/javascript");
+      print theme('wysiwyg_fields_wysiwyg_plugin_js', $field);
+      break;
+  }
+}

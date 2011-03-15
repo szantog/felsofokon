@@ -1,0 +1,15 @@
+; $Id$
+name = "Wysiwyg Fields"
+description = "CCK Field support for the WYSIWYG module"
+package = "CCK"
+dependencies[] = "filter"
+dependencies[] = "jquery_ui"
+dependencies[] = "wysiwyg"
+core = "6.x"
+
+; Information added by drupal.org packaging script on 2011-02-26
+version = "6.x-1.0-alpha1"
+core = "6.x"
+project = "wysiwyg_fields"
+datestamp = "1298704275"
+
