@@ -47,3 +47,6 @@
 [submodule "sites/all/modules/token_filter"]
 	path = sites/all/modules/token_filter
 	url = git://git.drupal.org/project/token_filter
+[submodule "sites/all/libraries/tinymce"]
+	path = sites/all/libraries/tinymce
+	url = /home/szantogabor/public_html/submodules/tinymce/
