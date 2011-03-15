@@ -44,3 +44,6 @@
 [submodule "sites/all/modules/filefield_paths"]
 	path = sites/all/modules/filefield_paths
 	url = git://git.drupal.org/project/filefield_paths
+[submodule "sites/all/modules/token_filter"]
+	path = sites/all/modules/token_filter
+	url = git://git.drupal.org/project/token_filter
