@@ -56,3 +56,6 @@
 [submodule "sites/all/modules/custom_features/page_fr"]
 	path = sites/all/modules/custom_features/page_fr
 	url = /home/szantogabor/public_html/submodules/page_fr/
+[submodule "sites/all/modules/custom_features/site_defaults"]
+	path = sites/all/modules/custom_features/site_defaults
+	url = /home/szantogabor/public_html/submodules/site_defaults_fr/
