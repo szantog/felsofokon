@@ -50,3 +50,6 @@
 [submodule "sites/all/libraries/tinymce"]
 	path = sites/all/libraries/tinymce
 	url = /home/szantogabor/public_html/submodules/tinymce/
+[submodule "sites/all/modules/custom_features/pathauto_settings_fr"]
+	path = sites/all/modules/custom_features/pathauto_settings_fr
+	url = /home/szantogabor/public_html/submodules/pathauto_settings_fr/
