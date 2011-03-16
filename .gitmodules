@@ -34,3 +34,22 @@
 [submodule "sites/all/modules/custom_features/custom_block_fr"]
 	path = sites/all/modules/custom_features/custom_block_fr
 	url = /home/szantogabor/public_html/submodules/custom_block_fr
+[submodule "sites/all/modules/wysiwyg_fields"]
+	path = sites/all/modules/wysiwyg_fields
+	url = git://git.drupal.org/project/wysiwyg_fields
+[submodule "sites/all/modules/purl"]
+	path = sites/all/modules/purl
+	url = git://git.drupal.org/project/purl
+
+[submodule "sites/all/modules/filefield_paths"]
+	path = sites/all/modules/filefield_paths
+	url = git://git.drupal.org/project/filefield_paths
+[submodule "sites/all/modules/token_filter"]
+	path = sites/all/modules/token_filter
+	url = git://git.drupal.org/project/token_filter
+[submodule "sites/all/libraries/tinymce"]
+	path = sites/all/libraries/tinymce
+	url = /home/szantogabor/public_html/submodules/tinymce/
+[submodule "sites/all/modules/custom_features/pathauto_settings_fr"]
+	path = sites/all/modules/custom_features/pathauto_settings_fr
+	url = /home/szantogabor/public_html/submodules/pathauto_settings_fr/
