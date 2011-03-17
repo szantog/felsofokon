@@ -62,3 +62,6 @@
 [submodule "sites/all/modules/custom_features/colorbox_settings"]
 	path = sites/all/modules/custom_features/colorbox_settings
 	url = /home/szantogabor/public_html/submodules/colorbox_settings_fr/
+[submodule "sites/all/modules/themetest"]
+	path = sites/all/modules/themetest
+	url = git://git.drupal.org/project/themetest
