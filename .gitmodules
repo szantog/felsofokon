@@ -65,3 +65,6 @@
 [submodule "sites/all/modules/themetest"]
 	path = sites/all/modules/themetest
 	url = git://git.drupal.org/project/themetest
+[submodule "sites/all/modules/styleguide"]
+	path = sites/all/modules/styleguide
+	url = git://git.drupal.org/project/styleguide
