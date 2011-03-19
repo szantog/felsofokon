@@ -1,0 +1,14 @@
+*~
+*.orig
+*.patch
+LICENSE.txt
+backups/*
+tmp/*
+files/*
+sites/default/files/*
+sites/default/settings.php
+lorem.txt
+*~
+\#*
+.#*
+

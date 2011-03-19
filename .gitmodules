@@ -1,0 +1,79 @@
+[submodule "sites/all/modules/wysiwyg"]
+	path = sites/all/modules/wysiwyg
+	url = git://git.drupal.org/project/wysiwyg.git
+[submodule "sites/all/modules/custom_features/input_format_editor"]
+	path = sites/all/modules/custom_features/input_format_editor
+	url = /home/szantogabor/public_html/submodules/input_format_editor/.git
+[submodule "sites/all/modules/custom_features/fr_og_blog"]
+	path = sites/all/modules/custom_features/fr_og_blog
+	url = /home/szantogabor/public_html/submodules/fr_og_blog/.git
+[submodule "sites/all/modules/custom_features/fr_og_settings"]
+	path = sites/all/modules/custom_features/fr_og_settings
+	url = /home/szantogabor/public_html/submodules/fr_og_settings/.git
+[submodule "sites/all/modules/custom_features/fr_roles_settings"]
+	path = sites/all/modules/custom_features/fr_roles_settings
+	url = /home/szantogabor/public_html/submodules/fr_roles_settings/.git
+[submodule "sites/all/modules/custom_features/fr_language_settings"]
+	path = sites/all/modules/custom_features/fr_language_settings
+	url = /home/szantogabor/public_html/submodules/fr_language_settings/.git
+[submodule "strongarm"]
+	path = strongarm
+	url = http://git.drupal.org/project/strongarm.git
+[submodule "sites/all/modules/strongarm"]
+	path = sites/all/modules/strongarm
+	url = http://git.drupal.org/project/strongarm.git
+[submodule "sites/all/modules/features"]
+	path = sites/all/modules/features
+	url = git://git.drupal.org/project/features
+[submodule "sites/all/modules/custom_features/fr_blog_post"]
+	path = sites/all/modules/custom_features/fr_blog_post
+	url = /home/szantogabor/public_html/submodules/fr_blog_post/.git
+[submodule "sites/all/modules/boxes"]
+	path = sites/all/modules/boxes
+	url = git://git.drupal.org/project/boxes
+[submodule "sites/all/modules/custom_features/custom_block_fr"]
+	path = sites/all/modules/custom_features/custom_block_fr
+	url = /home/szantogabor/public_html/submodules/custom_block_fr
+[submodule "sites/all/modules/wysiwyg_fields"]
+	path = sites/all/modules/wysiwyg_fields
+	url = git://git.drupal.org/project/wysiwyg_fields
+[submodule "sites/all/modules/purl"]
+	path = sites/all/modules/purl
+	url = git://git.drupal.org/project/purl
+
+[submodule "sites/all/modules/filefield_paths"]
+	path = sites/all/modules/filefield_paths
+	url = git://git.drupal.org/project/filefield_paths
+[submodule "sites/all/modules/token_filter"]
+	path = sites/all/modules/token_filter
+	url = git://git.drupal.org/project/token_filter
+[submodule "sites/all/libraries/tinymce"]
+	path = sites/all/libraries/tinymce
+	url = /home/szantogabor/public_html/submodules/tinymce/
+[submodule "sites/all/modules/custom_features/pathauto_settings_fr"]
+	path = sites/all/modules/custom_features/pathauto_settings_fr
+	url = /home/szantogabor/public_html/submodules/pathauto_settings_fr/
+[submodule "sites/all/modules/custom_features/page_fr"]
+	path = sites/all/modules/custom_features/page_fr
+	url = /home/szantogabor/public_html/submodules/page_fr/
+[submodule "sites/all/modules/custom_features/site_defaults"]
+	path = sites/all/modules/custom_features/site_defaults
+	url = /home/szantogabor/public_html/submodules/site_defaults_fr/
+[submodule "sites/all/modules/custom_features/colorbox_settings"]
+	path = sites/all/modules/custom_features/colorbox_settings
+	url = /home/szantogabor/public_html/submodules/colorbox_settings_fr/
+[submodule "sites/all/modules/themetest"]
+	path = sites/all/modules/themetest
+	url = git://git.drupal.org/project/themetest
+[submodule "sites/all/modules/styleguide"]
+	path = sites/all/modules/styleguide
+	url = git://git.drupal.org/project/styleguide
+[submodule "sites/all/modules/custom_features/imagacache_settings"]
+	path = sites/all/modules/custom_features/imagacache_settings
+	url = /home/szantogabor/public_html/submodules/imagecache_settings_fr/
+[submodule "sites/all/modules/custom_features/context_settings"]
+	path = sites/all/modules/custom_features/context_settings
+	url = /home/szantogabor/public_html/submodules/context_settings_fr/
+[submodule "sites/all/modules/custom_features/blog_context_fr"]
+	path = sites/all/modules/custom_features/blog_context_fr
+	url = /home/szantogabor/public_html/submodules/blog_context_fr/
