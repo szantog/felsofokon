@@ -77,3 +77,6 @@
 [submodule "sites/all/modules/custom_features/blog_context_fr"]
 	path = sites/all/modules/custom_features/blog_context_fr
 	url = /home/szantogabor/public_html/submodules/blog_context_fr/
+[submodule "sites/all/modules/custom_features/unknow_variables"]
+	path = sites/all/modules/custom_features/unknow_variables
+	url = /home/szantogabor/public_html/submodules/unknow_variables/
