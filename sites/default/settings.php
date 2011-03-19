@@ -89,7 +89,7 @@
  *   $db_url = 'mysqli://username:password@localhost/databasename';
  *   $db_url = 'pgsql://username:password@localhost/databasename';
  */
-$db_url = 'mysql://felsofokon:123456@localhost/felsofokon';
+$db_url = 'mysql://szantog_devel:devel@localhost/felsofokon_felso';
 $db_prefix = '';
 
 /**
