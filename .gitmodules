@@ -74,3 +74,6 @@
 [submodule "sites/all/modules/custom_features/context_settings"]
 	path = sites/all/modules/custom_features/context_settings
 	url = /home/szantogabor/public_html/submodules/context_settings_fr/
+[submodule "sites/all/modules/custom_features/blog_context_fr"]
+	path = sites/all/modules/custom_features/blog_context_fr
+	url = /home/szantogabor/public_html/submodules/blog_context_fr/
