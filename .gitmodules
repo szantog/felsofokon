@@ -68,3 +68,6 @@
 [submodule "sites/all/modules/styleguide"]
 	path = sites/all/modules/styleguide
 	url = git://git.drupal.org/project/styleguide
+[submodule "sites/all/modules/custom_features/imagacache_settings"]
+	path = sites/all/modules/custom_features/imagacache_settings
+	url = /home/szantogabor/public_html/submodules/imagecache_settings_fr/
