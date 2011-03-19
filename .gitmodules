@@ -80,3 +80,6 @@
 [submodule "sites/all/modules/custom_features/unknow_variables"]
 	path = sites/all/modules/custom_features/unknow_variables
 	url = /home/szantogabor/public_html/submodules/unknow_variables/
+[submodule "sites/all/modules/custom_features/group_spaces_fr"]
+	path = sites/all/modules/custom_features/group_spaces_fr
+	url = /home/szantogabor/public_html/submodules/group_spaces_fr/
