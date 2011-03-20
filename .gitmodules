@@ -83,3 +83,6 @@
 [submodule "sites/all/modules/custom_features/group_spaces_fr"]
 	path = sites/all/modules/custom_features/group_spaces_fr
 	url = /home/szantogabor/public_html/submodules/group_spaces_fr/
+[submodule "sites/all/modules/custom_features/spaces_dashboard_settings"]
+	path = sites/all/modules/custom_features/spaces_dashboard_settings
+	url = /home/szantogabor/public_html/submodules/spaces_dashboard_settings_fr/
