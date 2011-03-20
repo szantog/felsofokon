@@ -86,3 +86,6 @@
 [submodule "sites/all/modules/custom_features/spaces_dashboard_settings"]
 	path = sites/all/modules/custom_features/spaces_dashboard_settings
 	url = /home/szantogabor/public_html/submodules/spaces_dashboard_settings_fr/
+[submodule "sites/all/modules/og_subgroups"]
+	path = sites/all/modules/og_subgroups
+	url = git://git.drupal.org/project/og_subgroups
