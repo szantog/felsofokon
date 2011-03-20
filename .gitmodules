@@ -89,3 +89,6 @@
 [submodule "sites/all/modules/og_subgroups"]
 	path = sites/all/modules/og_subgroups
 	url = git://git.drupal.org/project/og_subgroups
+[submodule "sites/all/modules/spaces"]
+	path = sites/all/modules/spaces
+	url = git://git.drupal.org/project/spaces
