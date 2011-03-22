@@ -92,3 +92,6 @@
 [submodule "sites/all/modules/spaces"]
 	path = sites/all/modules/spaces
 	url = git://git.drupal.org/project/spaces
+[submodule "sites/all/modules/felsofokon/hook_alters"]
+	path = sites/all/modules/felsofokon/hook_alters
+	url = /home/szantogabor/public_html/submodules/hook_alters/
