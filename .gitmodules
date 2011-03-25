@@ -40,7 +40,6 @@
 [submodule "sites/all/modules/purl"]
 	path = sites/all/modules/purl
 	url = git://git.drupal.org/project/purl
-
 [submodule "sites/all/modules/filefield_paths"]
 	path = sites/all/modules/filefield_paths
 	url = git://git.drupal.org/project/filefield_paths
@@ -71,8 +70,8 @@
 [submodule "sites/all/modules/custom_features/imagacache_settings"]
 	path = sites/all/modules/custom_features/imagacache_settings
 	url = /home/szantogabor/public_html/submodules/imagecache_settings_fr/
-[submodule "sites/all/modules/custom_features/context_settings"]
-	path = sites/all/modules/custom_features/context_settings
+[submodule "sites/all/modules/custom_features/context_settings_fr"]
+	path = sites/all/modules/custom_features/context_settings_fr
 	url = /home/szantogabor/public_html/submodules/context_settings_fr/
 [submodule "sites/all/modules/custom_features/blog_context_fr"]
 	path = sites/all/modules/custom_features/blog_context_fr
@@ -95,3 +94,6 @@
 [submodule "sites/all/modules/felsofokon/hook_alters"]
 	path = sites/all/modules/felsofokon/hook_alters
 	url = /home/szantogabor/public_html/submodules/hook_alters/
+[submodule "sites/all/modules/custom_features/science_content_type_fr"]
+	path = sites/all/modules/custom_features/science_content_type_fr
+	url = /home/szantogabor/public_html/submodules/science_content_type_fr/
