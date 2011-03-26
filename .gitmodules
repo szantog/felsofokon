@@ -100,3 +100,6 @@
 [submodule "sites/all/modules/cck"]
 	path = sites/all/modules/cck
 	url = git://git.drupal.org/project/cck
+[submodule "sites/all/modules/filefield"]
+	path = sites/all/modules/filefield
+	url = git://git.drupal.org/project/filefield
