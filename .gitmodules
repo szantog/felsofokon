@@ -97,3 +97,13 @@
 [submodule "sites/all/modules/custom_features/science_content_type_fr"]
 	path = sites/all/modules/custom_features/science_content_type_fr
 	url = /home/szantogabor/public_html/submodules/science_content_type_fr/
+[submodule "sites/all/modules/cck"]
+	path = sites/all/modules/cck
+	url = git://git.drupal.org/project/cck
+[submodule "sites/all/modules/filefield"]
+	path = sites/all/modules/filefield
+	url = git://git.drupal.org/project/filefield
+[submodule "sites/all/modules/custom_features/felsofokon_profile"]
+        path = sites/all/modules/custom_features/felsofokon_profile
+        url = /home/szantogabor/public_html/submodules/felsofokon_profile/
+
