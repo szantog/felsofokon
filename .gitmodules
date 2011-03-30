@@ -107,3 +107,6 @@
         path = sites/all/modules/custom_features/felsofokon_profile
         url = /home/szantogabor/public_html/submodules/felsofokon_profile/
 
+[submodule "sites/all/modules/felsofokon/api_felsofokon"]
+	path = sites/all/modules/felsofokon/api_felsofokon
+	url = /home/szantogabor/public_html/submodules/felsofokon/api_felsofokon/.git
