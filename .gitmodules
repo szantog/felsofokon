@@ -110,3 +110,6 @@
 [submodule "sites/all/modules/felsofokon/api_felsofokon"]
 	path = sites/all/modules/felsofokon/api_felsofokon
 	url = /home/szantogabor/public_html/submodules/felsofokon/api_felsofokon/.git
+[submodule "sites/all/modules/felsofokon/science_set"]
+	path = sites/all/modules/felsofokon/science_set
+	url = /home/szantogabor/public_html/submodules/felsofokon/science_set/
