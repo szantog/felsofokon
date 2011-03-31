@@ -113,3 +113,6 @@
 	path = sites/all/modules/felsofokon/science_set
 	url = /home/szantogabor/public_html/submodules/felsofokon/science_set/
 
+[submodule "sites/all/themes/felsofokon"]
+	path = sites/all/themes/felsofokon
+	url = /home/szantogabor/public_html/submodules/felsofokon/felsofokon/.git
