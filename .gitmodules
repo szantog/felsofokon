@@ -113,3 +113,9 @@
 	path = sites/all/modules/felsofokon/science_set
 	url = /home/szantogabor/public_html/submodules/felsofokon/science_set/
 
+[submodule "sites/all/themes/felsofokon"]
+	path = sites/all/themes/felsofokon
+	url = /home/szantogabor/public_html/submodules/felsofokon/felsofokon/.git
+[submodule "sites/all/modules/special_menu_items"]
+	path = sites/all/modules/special_menu_items
+	url = http://git.drupal.org/project/special_menu_items.git
