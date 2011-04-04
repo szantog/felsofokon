@@ -119,3 +119,7 @@
 [submodule "sites/all/modules/special_menu_items"]
 	path = sites/all/modules/special_menu_items
 	url = http://git.drupal.org/project/special_menu_items.git
+[submodule "sites/all/modules/admin_menu"]
+        path = sites/all/modules/admin_menu
+        url = sites/all/modules/admin.git
+
