@@ -1,0 +1,10 @@
+name = "Fast Permissions Administration"
+description = "Provides quick access to a content type's or field's permissions."
+core = 6.x
+
+; Information added by drupal.org packaging script on 2011-03-22
+version = "6.x-2.2"
+core = "6.x"
+project = "fpa"
+datestamp = "1300831268"
+
