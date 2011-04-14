@@ -123,3 +123,6 @@
         path = sites/all/modules/admin_menu
         url = sites/all/modules/admin.git
 
+[submodule "sites/all/modules/felsofokon/cck_multifield_help"]
+	path = sites/all/modules/felsofokon/cck_multifield_help
+	url = szantog@git.drupal.org:sandbox/szantog/1117480.git
